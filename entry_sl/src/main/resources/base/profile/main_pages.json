@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/KSIndex",
+    "pages/VideoPlayActivity",
+    "pages/LivePlayActivity",
+    "pages/ShortVideoActivity"
+  ]
+}

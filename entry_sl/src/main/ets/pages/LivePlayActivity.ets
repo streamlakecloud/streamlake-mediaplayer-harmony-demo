@@ -204,6 +204,14 @@ struct LivePlayActivity {
         return url;
       }
     })
+    // sei信息回调
+    this.livePlayer?.setOnSeiInfoListener({
+      onSeiInfo: (data: ArrayBuffer, size: number, payloadType: number) => {
+        let uint8Array = new Uint8Array(data);
+        let str = new util.TextDecoder().decodeToString(uint8Array);
+        demologi(TAG, `listener OnLiveSei data info::${str} size=${size} payloadType=${payloadType}`);
+      }
+    })
   }
 
   @Builder

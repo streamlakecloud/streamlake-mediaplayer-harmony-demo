@@ -9,6 +9,7 @@ import { DemoPlayerState } from '../data/DemoData';
 import { DemoPlayerStateGet } from '../data/DemoData';
 import { LogItem } from '../data/LogItem';
 import { formatTime, localTimeStr } from '../utils/time';
+import { util } from '@kit.ArkTS';
 
 const TAG: string = "LivePlayActivityXXX"
 
